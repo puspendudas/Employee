@@ -1,9 +1,8 @@
-from fastapi import APIRouter, Depends, status, HTTPException
+from fastapi import APIRouter, Depends
 from sqlalchemy.orm.session import Session
-from models.index import DbTask, DbAssignment, DbEmployee
-from config.database import SessionLocal, engine
-from datetime import datetime
-from schemas.index import Employee, Task, Assignment
+from models.index import DbAssignment
+from config.database import SessionLocal
+from schemas.index import Assignment
 
 category = APIRouter()
 

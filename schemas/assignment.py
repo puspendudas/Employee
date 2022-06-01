@@ -1,7 +1,5 @@
 from pydantic import BaseModel
-from datetime import date, datetime
-from typing import Optional
-from fastapi import UploadFile, File
+from datetime import date
 
 class Assignment(BaseModel):
     emp_id: int

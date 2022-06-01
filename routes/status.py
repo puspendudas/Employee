@@ -1,7 +1,6 @@
-from fastapi import APIRouter, Depends, responses, status, Response, HTTPException
+from fastapi import APIRouter, Depends, status
 from sqlalchemy.orm.session import Session
-from config.database import SessionLocal, engine
-from datetime import datetime
+from config.database import SessionLocal
 from components.index import show_satus
 
 stat = APIRouter()

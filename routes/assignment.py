@@ -1,8 +1,7 @@
-from fastapi import APIRouter, Depends, responses, status, Response, HTTPException
+from fastapi import APIRouter, Depends, status
 from sqlalchemy.orm.session import Session
-from config.database import SessionLocal, engine
+from config.database import SessionLocal
 from schemas.index import Assignment
-from datetime import datetime
 from components.index import add_ass
 
 assignment = APIRouter()

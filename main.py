@@ -1,8 +1,6 @@
-from fastapi import FastAPI, Depends, responses, status, Response, HTTPException
-from sqlalchemy.orm.session import Session
+from fastapi import FastAPI
 from config.database import engine, Base
 from fastapi.middleware.cors import CORSMiddleware
-import uvicorn
 from routes.index import stat, employee, task, assignment
 
 Base.metadata.create_all(engine)
